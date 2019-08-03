@@ -11,6 +11,7 @@
     <modules>
         <module>microservice-simple-provider-user</module>
         <module>microservice-simple-consumer-movie</module>
+        <module>microservice-cloud-eureka-server7001</module>
     </modules>
 
     <properties>
@@ -21,7 +22,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.5.RELEASE</version>
+        <version>2.0.8.RELEASE</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
 
@@ -30,7 +31,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.SR3</version>
+                <version>Finchley.SR4</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
