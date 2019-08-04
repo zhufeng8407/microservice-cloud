@@ -1,0 +1,16 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: consumer-movie
+logging:
+  level:
+    root: INFO
+    com.feng: DEBUG
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/
+    fetch-registry: true
+  instance:
+    instance-id: consumer-movie9001

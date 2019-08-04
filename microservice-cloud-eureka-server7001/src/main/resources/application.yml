@@ -11,10 +11,10 @@ eureka:
   server:
     enable-self-preservation: false
   instance:
-    hostname: localhost
+    hostname: eureka7001
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://eureka7002:7002/eureka/ #集群环境不需要注册自己
 
