@@ -1,18 +1,24 @@
 server:
   port: 6001
+  servlet:
+    context-path: /route
 spring:
   application:
-    name: zuul
+    name: simple-zuul
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/
-    fetch-registry: true
+    register-with-eureka: true
   instance:
     instance-id: zuul6001
 zuul:
   routes:
-    myMovie:  #定义的规则名，可以随便起
-      path: /zuulMovie/**
-      serviceId: consumer-movie
+#    myMovie:  # 自定义规则的名字，随便起
+#      path: /myMovie/**
+#      serviceId: PROVIDER-USER
+
+  #简洁写法
+    provider-user: /myMovie/**
+
