@@ -12,6 +12,7 @@
         <module>microservice-simple-provider-user</module>
         <module>microservice-simple-consumer-movie</module>
         <module>microservice-cloud-eureka-server7001</module>
+        <module>microservice-simple-zuul</module>
     </modules>
 
     <properties>
