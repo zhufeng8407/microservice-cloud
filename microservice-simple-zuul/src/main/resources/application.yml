@@ -20,5 +20,6 @@ zuul:
 #      serviceId: PROVIDER-USER
 
   #简洁写法
-    provider-user: /myMovie/**
+    provider-user: /myUser/**
+    consumer-movie: /myMovie/**
 
