@@ -15,7 +15,8 @@ public class UserController {
     private UserRepository userRepository;
 
     @GetMapping("/simple/{id}")
-    public User findById(@PathVariable Long id) {
+    public User findById(@PathVariable Long id) throws InterruptedException {
+        Thread.sleep(2900);
         return userRepository.findById(id).orElseGet(User::new);
     }
 }

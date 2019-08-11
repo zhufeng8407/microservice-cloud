@@ -14,3 +14,9 @@ eureka:
     fetch-registry: true
   instance:
     instance-id: consumer-movie9001
+
+hystrix:
+  command:
+    default:
+      circuitBreaker:
+        requestVolumeThreshold: 50
